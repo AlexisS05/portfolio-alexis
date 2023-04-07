@@ -11,11 +11,19 @@
 			rel="stylesheet"
 		/>
 		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+		/>
+		<link
 			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="queries.css" />
+		<script
+			defer
+			src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+		></script>
 		<script defer src="https://unpkg.com/scrollreveal"></script>
 		<script defer src="script.js"></script>
 		<title>Alexis Sanchez</title>
@@ -28,6 +36,7 @@
 				<a href="#home" class="active">Home</a>
 				<a href="#about">About</a>
 				<a href="#portfolio">Projects</a>
+				<a href="#blog">Blog</a>
 				<a href="#contact">Contact</a>
 			</nav>
 
@@ -43,13 +52,13 @@
 				<p>A passionate Front-End Developer based in New York City, NY</p>
 
 				<div class="social-media">
-					<a href="#">
+					<!-- <a href="#">
 						<i class="bx bxl-twitter"></i>
-					</a>
-					<a href="#">
+					</a> -->
+					<a href="https://www.linkedin.com/in/alexis-sanchez-l05/">
 						<i class="bx bxl-linkedin"></i>
 					</a>
-					<a href="#">
+					<a href="https://github.com/AlexisS05">
 						<i class="bx bxl-github"></i>
 					</a>
 				</div>
@@ -64,75 +73,159 @@
 		</section>
 
 		<section class="about" id="about">
-			<div class="about-img">
-				<img
-					src="./img/coding-computer.avif"
-					class="code-img"
-					alt="Computer & Coding"
-				/>
-			</div>
+			<div class="about-display">
+				<div class="about-img">
+					<img
+						src="./img/coding-computer.avif"
+						class="code-img"
+						alt="Computer & Coding"
+					/>
+				</div>
 
-			<div class="about-content">
-				<h2 class="heading abt-space">About <span>Me</span></h2>
-				<h3>Hi, I'm Here to help your next project!</h3>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
-					dolorem sapiente veritatis maiores temporibus iure unde velit ducimus
-					ipsam blanditiis quia debitis doloremque autem amet voluptatum
-					consequuntur vel, repellendus earum.
-				</p>
-				<a href="#" class="btn">Read More</a>
+				<div class="about-content">
+					<h2 class="heading abt-space">About <span>Me</span></h2>
+					<h3>Hi, I'm Here to help your next project!</h3>
+					<p>
+						As a Junior Front-End Engineer. I possess an impressive arsenal of
+						skills in HTML, CSS, JavaScript, React, SCSS, Java, and Python.
+						Including utizling
+					</p>
+					<a href="#blog" class="btn">Read More</a>
+				</div>
+			</div>
+			<div class="skills">
+				<h2>Tech<span> Stack: </span></h2>
+				<div class="skill-container">
+					<div class="bx bxl-html5"></div>
+					<div class="bx bxl-css3"></div>
+					<div class="bx bxl-javascript"></div>
+					<div class="bx bxl-react"></div>
+					<div class="bx bxl-python"></div>
+					<div class="bx bxl-java"></div>
+					<div class="bx bxl-sass"></div>
+				</div>
 			</div>
 		</section>
 
 		<section class="portfolio" id="portfolio">
-			<h2 class="heading">Latest <span>Projects</span></h2>
+			<h2 class="heading">Latest &nbsp;<span>Project</span></h2>
 
 			<div class="portfolio-container">
 				<div class="portfolio-box">
-					<img src="/img/Project1.JPG" alt="Project 1" class="project-img" />
-					<div class="portfolio-layer">
-						<h4>Web Development</h4>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Voluptates repellat tempore nulla sequi explicabo hic suscipit.
-							Recusandae tempora, repellat porro atque quos dolor sunt, minima
-							accusantium sint magnam similique architecto!
-						</p>
-						<a href="#"><i class="bx bx-link-external"></i></a>
+					<a href="https://poke-dex-search.netlify.app/">
+						<img src="/img/Project1.JPG" alt="Project 1" class="project-img" />
+					</a>
+				</div>
+				<div class="portfolio-layer">
+					<h4>Pokemon Search Engine</h4>
+					<p>
+						A simple search engine application for searching Pokemon. The user
+						can search any pokemon they want and will return the desired result.
+						This application uses a public API called PokeAPI. This is my first
+						project I created utilizing everything I learned in JavaScript.
+						Utilizing classes, a model, controller and view paradigm
+					</p>
+					<div class="portfolio-tech">
+						<h3>JavaScript</h3>
+						<h3>Model-View-Controller</h3>
+						<h3>Object-Orientated Programming</h3>
+						<h3>HTML/CSS/SCSS</h3>
 					</div>
+					<a href="https://poke-dex-search.netlify.app/"
+						>Link <i class="bx bx-link-external"></i
+					></a>
+					<a href="https://github.com/AlexisS05/PokemonSearch">
+						<i class="bx bxl-github"></i>
+					</a>
+				</div>
+				<div class="portfolio-layer">
+					<h4>Web Development</h4>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+						repellat tempore nulla sequi explicabo hic suscipit. Recusandae
+						tempora, repellat porro atque quos dolor sunt, minima accusantium
+						sint magnam similique architecto!
+					</p>
+					<a href="#"><i class="bx bx-link-external"></i></a>
 				</div>
 				<div class="portfolio-box">
 					<img src="./img/Project1.JPG" alt="Project 1" class="project-img" />
-					<div class="portfolio-layer">
-						<h4>Web Development</h4>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Voluptates repellat tempore nulla sequi explicabo hic suscipit.
-							Recusandae tempora, repellat porro atque quos dolor sunt, minima
-							accusantium sint magnam similique architecto!
-						</p>
-						<a href="#"><i class="bx bx-link-external"></i></a>
-					</div>
 				</div>
 				<div class="portfolio-box">
 					<img src="./img/Project1.JPG" alt="Project 1" class="project-img" />
-					<div class="portfolio-layer">
-						<h4>Web Development</h4>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Voluptates repellat tempore nulla sequi explicabo hic suscipit.
-							Recusandae tempora, repellat porro atque quos dolor sunt, minima
-							accusantium sint magnam similique architecto!
-						</p>
-						<a href="#"><i class="bx bx-link-external"></i></a>
+				</div>
+				<div class="portfolio-layer">
+					<h4>Web Development</h4>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+						repellat tempore nulla sequi explicabo hic suscipit. Recusandae
+						tempora, repellat porro atque quos dolor sunt, minima accusantium
+						sint magnam similique architecto!
+					</p>
+					<a href="#"><i class="bx bx-link-external"></i></a>
+				</div>
+			</div>
+		</section>
+
+		<section class="blog-container" id="blog">
+			<h2><span>Blogs</span></h2>
+
+			<div class="blog-wrapper">
+				<div class="blog-box mySwiper">
+					<div class="blog-content swiper-wrapper">
+						<div class="blog-slide swiper-slide">
+							<h3>March 24th 2023</h3>
+							<p>
+								I got to be a part of an event called AWS GameDay. The event was
+								hosted by Amazon in one of their buildings in Manhattan. The
+								building is called Amazon JFK 14 and it was so much fun. I got
+								the opportunity to work with other students and work together on
+								solving problems on a website utilizing the AWS services. The
+								services we were able to use was AWS EC2, VPC, S3, WAF, and RDS.
+								I knew what they were but never really used them before. I was
+								only familiar with EC2 because I did use it before. It was a
+								friendly competition among the groups. I honestly had so much
+								fun interacting and talking with the students and staff there. I
+								learned so much from them. It made me realize working with
+								others and learning from them and talking about our passions is
+								truly the happiest feeling for me. I want to experience life and
+								work like that everyday. I was filled with excitement and filled
+								with curiousity on wanting to keep learning and learning from
+								people. I kept nonstop talking about code and explaining my
+								process on how I was able to understand JavaScript. Learning is
+								so much fun to me. I don't regret going to this event one bit.
+								It was truly the best decision I ever made. I'm glad I recieved
+								an invitation.
+							</p>
+						</div>
+						<div class="blog-slide swiper-slide">
+							<h3>Blog 2</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Doloribus, architecto, nesciunt unde totam molestias eius
+								explicabo voluptate quos dolor adipisci blanditiis enim nulla
+								molestiae dignissimos. Architecto deleniti fugiat optio nihil.
+							</p>
+						</div>
+						<div class="blog-slide swiper-slide">
+							<h3>Blog 3</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Doloribus, architecto, nesciunt unde totam molestias eius
+								explicabo voluptate quos dolor adipisci blanditiis enim nulla
+								molestiae dignissimos. Architecto deleniti fugiat optio nihil.
+							</p>
+						</div>
 					</div>
+					<div class="swiper-btn swiper-button-next"></div>
+					<div class="swiper-btn swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
 				</div>
 			</div>
 		</section>
 
 		<section class="contact" id="contact">
-			<h2 class="heading">Contact <span>Me!</span></h2>
+			<h2 class="heading">Contact &nbsp;<span> Me!</span></h2>
 
 			<form action="#">
 				<div class="input-box">

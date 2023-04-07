@@ -74,6 +74,7 @@ body {
 	width: 100%;
 	height: 0.2rem;
 	background: var(--main-color);
+	z-index: 9999999;
 }
 
 #darkMode-icon {
@@ -84,6 +85,7 @@ body {
 .header .sticky #darkMode-icon {
 	color: var(--text-color);
 	opacity: 0.9;
+	z-index: 99999999;
 }
 
 #menu-icon {
@@ -171,18 +173,28 @@ section {
 	border: 2px solid var(--main-color);
 }
 
+/*///////////////////////////////////////////
+/////////////// About ///////////////////////
+///////////////////////////////////////////*/
+
 .about {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
 	gap: 5rem;
 	width: 100%;
 	font-size: 2rem;
 	margin: 0 auto;
 }
 
+.about h2 {
+	margin-bottom: 1rem;
+}
+
 .about p {
 	width: 50rem;
+	margin-bottom: 2rem;
 }
 
 span {
@@ -195,34 +207,119 @@ span {
 	border-radius: 25px;
 }
 
+.about-display {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+}
+
+/*///////////////////////////////////////////
+/////////////// Skills //////////////////////
+///////////////////////////////////////////*/
+
+.skills {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+.skills h2 {
+	font-size: 4rem;
+	margin-bottom: 1rem;
+}
+
+.skill-container {
+	font-size: 6rem;
+}
+
+.bx {
+	cursor: pointer;
+}
+
+/*///////////////////////////////////////////
+/////////////// Blogs ///////////////////////
+///////////////////////////////////////////*/
+
+.blog-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	padding: 5rem 1rem;
+}
+
+.blog-container h2 {
+	font-size: 5rem;
+}
+
+.blog-container p {
+	font-size: 1.6rem;
+}
+
+.blog-container .blog-wrapper {
+	position: relative;
+	max-width: 90rem;
+	width: 100%;
+	padding: 5rem;
+	z-index: 0;
+}
+
+.blog-wrapper .blog-box {
+	overflow: hidden;
+}
+
+.blog-content .blog-slide {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background: var(--bg-color);
+	border-radius: 2rem;
+	box-shadow: 0 0.1rem 0.5rem var(--shadow-color);
+	padding: 3rem 5rem;
+	border-top: 0.8rem solid var(--main-color);
+	border-bottom: 0.8rem solid var(--main-color);
+}
+
+/*///////////////////////////////////////////
+/////////////// Portfolio  //////////////////
+///////////////////////////////////////////*/
+
 .portfolio {
 	padding-bottom: 10rem;
 }
 
 .portfolio h2 {
 	margin-bottom: 4rem;
-	margin: 0 auto;
 	font-size: 4rem;
+	display: flex;
+	justify-content: center;
 }
 
 .portfolio .portfolio-container {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
-	gap: 2.5rem;
+	gap: 4rem;
 }
 
 .portfolio-container .portfolio-box {
-	position: relative;
 	display: flex;
 	border-radius: 2rem;
 	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-	overflow: hidden;
+}
+
+.portfolio-container {
+	max-width: 120rem;
+	margin: 0 auto;
 }
 
 .portfolio-box img {
 	width: 100%;
 	transition: 0.5s ease;
+	border-radius: 25px;
+	cursor: pointer;
 }
 
 .portfolio-box:hover img {
@@ -230,29 +327,24 @@ span {
 }
 
 .portfolio-box .portfolio-layer {
-	position: absolute;
-	bottom: 0;
-	left: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
-	color: var(--white-color);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	text-align: center;
 	padding: 0 4rem;
-	opacity: 0;
 	transition: 0.5s ease;
 }
 
-.portfolio-box:hover .portfolio-layer {
-	opacity: 1;
+.portfolio-layer h4 {
+	font-size: 2.8rem;
 }
 
-.portfolio-layer h4 {
-	font-size: 3rem;
+.portfolio-tech {
+	display: flex;
+	gap: 1rem;
 }
 
 .portfolio-layer p {
@@ -261,19 +353,21 @@ span {
 }
 
 .portfolio-layer a {
-	display: inline-flex;
+	/* display: inline-flex; */
 	justify-content: center;
 	align-items: center;
 	width: 5rem;
 	height: 5rem;
-	background: var(--white-color);
-	border-radius: 50%;
 }
 
 .portfolio-layer a i {
 	font-size: 2rem;
 	color: #333;
 }
+
+/*///////////////////////////////////////////
+/////////////// Contact /////////////////////
+///////////////////////////////////////////*/
 
 .contact h2 {
 	margin-bottom: 3rem;
@@ -319,6 +413,10 @@ span {
 	margin-top: 2rem;
 	cursor: pointer;
 }
+
+/*///////////////////////////////////////////
+/////////////// Footer //////////////////////
+///////////////////////////////////////////*/
 
 .footer {
 	display: flex;

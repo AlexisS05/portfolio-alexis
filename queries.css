@@ -115,9 +115,13 @@
 	}
 
 	.about {
-		flex-direction: column-reverse;
+		flex-direction: column;
 		text-align: center;
 		justify-content: center;
+	}
+
+	.about-display {
+		flex-direction: column-reverse;
 	}
 
 	.about-content h2 {
@@ -137,8 +141,12 @@
 		margin-bottom: 3rem;
 	}
 
-	.portfolio .portfolio-container {
-		grid-template-columns: repeat(2, 1fr);
+	.portfolio {
+		width: 100%;
+	}
+
+	.swiper-btn {
+		display: none;
 	}
 }
 
