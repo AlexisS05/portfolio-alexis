@@ -248,14 +248,24 @@ span {
 	flex-direction: column;
 	width: 100%;
 	padding: 5rem 1rem;
+	margin-top: 5rem;
 }
 
 .blog-container h2 {
-	font-size: 5rem;
+	font-size: 5em;
+}
+
+.blog-slide h2 {
+	font-size: 4rem;
 }
 
 .blog-container p {
 	font-size: 1.6rem;
+}
+
+.blog-slide img {
+	width: 20%;
+	height: 20%;
 }
 
 .blog-container .blog-wrapper {
@@ -302,6 +312,17 @@ span {
 	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
 	gap: 4rem;
+}
+
+.project-img {
+	width: 100%;
+	border-radius: 25px;
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+
+.project-img:hover {
+	transform: scale(1.1);
 }
 
 .portfolio-container .portfolio-box {

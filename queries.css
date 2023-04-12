@@ -46,6 +46,10 @@
 	.footer {
 		padding: 2rem 3%;
 	}
+
+	.about-content p {
+		width: 30rem;
+	}
 }
 
 @media (max-width: 768px) {
@@ -159,6 +163,11 @@
 @media (max-width: 450px) {
 	html {
 		font-size: 50%;
+	}
+
+	.code-img {
+		width: 70vw;
+		height: 50vw;
 	}
 
 	#darkMode-icon {

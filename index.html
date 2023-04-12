@@ -24,7 +24,9 @@
 			defer
 			src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
 		></script>
+
 		<script defer src="https://unpkg.com/scrollreveal"></script>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
 		<script defer src="script.js"></script>
 		<title>Alexis Sanchez</title>
 	</head>
@@ -37,7 +39,7 @@
 				<a href="#about">About</a>
 				<a href="#portfolio">Projects</a>
 				<a href="#blog">Blog</a>
-				<a href="#contact">Contact</a>
+				<!-- <a href="#contact">Contact</a> -->
 			</nav>
 
 			<div class="bx bx-moon" id="darkMode-icon"></div>
@@ -84,11 +86,10 @@
 
 				<div class="about-content">
 					<h2 class="heading abt-space">About <span>Me</span></h2>
-					<h3>Hi, I'm Here to help your next project!</h3>
 					<p>
 						As a Junior Front-End Engineer. I possess an impressive arsenal of
 						skills in HTML, CSS, JavaScript, React, SCSS, Java, and Python.
-						Including utizling
+						Including utilizing other technologies such as Parcel, and NPM.
 					</p>
 					<a href="#blog" class="btn">Read More</a>
 				</div>
@@ -109,7 +110,6 @@
 
 		<section class="portfolio" id="portfolio">
 			<h2 class="heading">Latest &nbsp;<span>Project</span></h2>
-
 			<div class="portfolio-container">
 				<div class="portfolio-box">
 					<a href="https://poke-dex-search.netlify.app/">
@@ -131,38 +131,68 @@
 						<h3>Object-Orientated Programming</h3>
 						<h3>HTML/CSS/SCSS</h3>
 					</div>
-					<a href="https://poke-dex-search.netlify.app/"
-						>Link <i class="bx bx-link-external"></i
+					<a href="https://poke-dex-search.netlify.app/">
+						<i class="bx bx-link-external"></i
 					></a>
 					<a href="https://github.com/AlexisS05/PokemonSearch">
 						<i class="bx bxl-github"></i>
 					</a>
 				</div>
 				<div class="portfolio-layer">
-					<h4>Web Development</h4>
+					<h4>WWE Clone</h4>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-						repellat tempore nulla sequi explicabo hic suscipit. Recusandae
-						tempora, repellat porro atque quos dolor sunt, minima accusantium
-						sint magnam similique architecto!
+						This is a clone of the official site of WWE (World Wrestling
+						Entertainment). I didn't like how their carousel was in the desktop
+						version. I tried to come up with a better solution for the desktop
+						browser and mobile/tablet users. It isn't the best solution but it
+						was my approach/idea to it.
 					</p>
-					<a href="#"><i class="bx bx-link-external"></i></a>
+					<div class="portfolio-tech">
+						<h3>JavaScript</h3>
+						<h3>HTML/CSS</h3>
+						<h3>Responsive Web Design</h3>
+					</div>
+					<a href="https://wwe-clone.netlify.app/"
+						><i class="bx bx-link-external"></i
+					></a>
+					<a href="https://github.com/AlexisS05/wwe-clone">
+						<i class="bx bxl-github"></i>
+					</a>
 				</div>
 				<div class="portfolio-box">
-					<img src="./img/Project1.JPG" alt="Project 1" class="project-img" />
+					<a href="https://wwe-clone.netlify.app/">
+						<img src="./img/Project3.JPG" alt="Project 3" class="project-img" />
+					</a>
 				</div>
 				<div class="portfolio-box">
-					<img src="./img/Project1.JPG" alt="Project 1" class="project-img" />
+					<a href="https://genshin-countdown-randomizer.netlify.app/">
+						<img src="./img/Project2.JPG" alt="Project 1" class="project-img" />
+					</a>
 				</div>
 				<div class="portfolio-layer">
-					<h4>Web Development</h4>
+					<h4>Genshin Countdown & Randomizer Minigame</h4>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-						repellat tempore nulla sequi explicabo hic suscipit. Recusandae
-						tempora, repellat porro atque quos dolor sunt, minima accusantium
-						sint magnam similique architecto!
+						This is a combination of two small projects I did when learning
+						JavaScript. First one was a Randomizer minigame where you click a
+						button and you get a random character. It was the first mini project
+						I ever made with HTML, CSS, and JavaScript. The second one is a
+						countdown leading to when the game's version goes into maintenance.
+						Once the initial countdown timer ends. The second timer which is the
+						maintenance will automatically begin. I learned to use countdowns
+						and timers for this project. This is my beginner learning roots
+						project.
 					</p>
-					<a href="#"><i class="bx bx-link-external"></i></a>
+					<div class="portfolio-tech">
+						<h3>JavaScript</h3>
+						<h3>HTML/CSS</h3>
+						<h3>Timers & Countdown</h3>
+					</div>
+					<a href="https://genshin-countdown-randomizer.netlify.app/">
+						<i class="bx bx-link-external"></i
+					></a>
+					<a href="https://github.com/AlexisS05/genshin-impact-mini-site">
+						<i class="bx bxl-github"></i>
+					</a>
 				</div>
 			</div>
 		</section>
@@ -174,7 +204,8 @@
 				<div class="blog-box mySwiper">
 					<div class="blog-content swiper-wrapper">
 						<div class="blog-slide swiper-slide">
-							<h3>March 24th 2023</h3>
+							<img src="img/aws.png" alt="AWS Logo" />
+							<h2>March 24th 2023</h2>
 							<p>
 								I got to be a part of an event called AWS GameDay. The event was
 								hosted by Amazon in one of their buildings in Manhattan. The
@@ -199,21 +230,58 @@
 							</p>
 						</div>
 						<div class="blog-slide swiper-slide">
-							<h3>Blog 2</h3>
+							<img src="img/react.png" alt="React Logo" />
+							<h2>March 29th 2023</h2>
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Doloribus, architecto, nesciunt unde totam molestias eius
-								explicabo voluptate quos dolor adipisci blanditiis enim nulla
-								molestiae dignissimos. Architecto deleniti fugiat optio nihil.
+								This day is when I started to learn React. I'm more confident
+								with my knowledge in JavaScript. I know the projects I have
+								created aren't professional yet. But that's what I'm working on
+								now while learning React. Transitioning and adapting to React
+								was really easy coming in with JavaScript knowledge. I realized
+								why React is called React! I was blown away at first but it
+								isn't so difficult. I started to use React as class components
+								because I was familiar with it and used it in JavaScript. Now
+								I'm using React as functional components. Learning about React
+								Hooks and React Router. I just wanna play around with it more.
+								I'm eager and excited to learn more and build real world
+								professional applications in React. My current projects are
+								still meaningful to me because those were my learning roots. I
+								learned so much doing those projects. I want to level up from
+								small projects to real world projects next as my main goal. Of
+								course learning React isn't the end goal. I want to learn other
+								technologies such as Back-End and Databases. There's so much to
+								learn and I'm eager to learn it.
 							</p>
 						</div>
 						<div class="blog-slide swiper-slide">
-							<h3>Blog 3</h3>
+							<img src="img/skillsusa.png" alt="Skills USA LOGO" />
+							<h2>February 2018</h2>
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Doloribus, architecto, nesciunt unde totam molestias eius
-								explicabo voluptate quos dolor adipisci blanditiis enim nulla
-								molestiae dignissimos. Architecto deleniti fugiat optio nihil.
+								This month, I was selected for my class to represent Information
+								Technology and the school to take part in the New York City
+								SKILLS USA Competition. The school I attended was the School of
+								Cooperative Technical Education. I loved that school. I was
+								going there while going through my first year of college at the
+								same time. It was hard but I managed my time and was able to
+								achieve my goals. I learned a lot about Information Technology.
+								Building computers, troubleshooting, setting up new hardware,
+								documentating/fixing hardware and software issues. The SKILLS
+								USA Competition gave me the opportunity to not only compete but
+								learn and interact with others. I had fun learning from my peers
+								there. I felt alot of pressure since it was the first time I
+								ever competed against other students. The tasks during the
+								competition was first build a computer and successfully get it
+								to the BIOS setup. The second task is to assemble a functional
+								Ethernet cable. Test it using a Network Cable Tester to make
+								sure it works. The final task was to troubleshoot some software
+								issues and change minor details for the user on a desktop. I
+								came in 2nd Place. I was still really proud of myself to have
+								come in 2nd place. I never thought I would be a part of
+								something that important and huge in the first place. I was
+								happy and had a ton of fun. I wasn't expecting to recieve a
+								medal but did and I will always remember the time I not only
+								felt pressure but still practiced and worked hard to have come
+								in 2nd Place.
 							</p>
 						</div>
 					</div>
@@ -224,28 +292,27 @@
 			</div>
 		</section>
 
-		<section class="contact" id="contact">
+		<!-- <section class="contact" id="contact">
 			<h2 class="heading">Contact &nbsp;<span> Me!</span></h2>
 
-			<form action="#">
+			<form method="post">
 				<div class="input-box">
-					<input type="text" placeholder="Full Name" />
-					<input type="email" placeholder="Email Address" />
+					<input type="text" placeholder="Full Name" id="name" />
+					<input type="email" placeholder="Email Address" id="email" />
 				</div>
 				<div class="input-box">
-					<input type="number" placeholder="Mobile Number" />
-					<input type="text" placeholder="Email Subject" />
+					<input type="number" placeholder="Mobile Number" id="phone-number" />
+					<input type="text" placeholder="Email Subject" id="subject" />
 				</div>
 				<textarea
-					name=""
-					id=""
 					cols="30"
 					rows="10"
 					placeholder="Your Message"
+					id="message"
 				></textarea>
-				<input type="submit" value="Send Message" class="btn" />
+				<input type="submit" value="Send Message" class="btn" id="btn" />
 			</form>
-		</section>
+		</section> -->
 
 		<footer class="footer">
 			<div class="footer-text">

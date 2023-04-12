@@ -71,3 +71,23 @@ var swiper = new Swiper('.mySwiper', {
 		prevEl: '.swiper-button-prev',
 	},
 });
+
+// const btn = document.getElementById('btn');
+// btn.addEventListener('click', function (e) {
+// 	e.preventDefault();
+// 	console.log('Hi');
+// 	const name = document.getElementById('name').value;
+// 	const email = document.getElementById('email').value;
+// 	const phoneNum = document.getElementById('phone-number').value;
+// 	const subject = document.getElementById('subject').value;
+// 	const message = document.getElementById('message').value;
+// 	const body = `Name: ${name}  <br/> Email: ${email} <br/> Phone Number: ${phoneNum} <br/> Subject: ${subject} <br/> Message: ${message}`;
+
+// 	Email.send({
+// 		SecureToken: '',
+// 		To: 'testemail',
+// 		From: 'testemail',
+// 		Subject: 'Contact Message',
+// 		Body: body,
+// 	}).then((message) => alert(message));
+// });
