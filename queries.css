@@ -170,6 +170,10 @@
 		height: 50vw;
 	}
 
+	.portfolio-layer:nth-child(3) {
+		grid-row: 4;
+	}
+
 	#darkMode-icon {
 		right: 6rem;
 	}
