@@ -26,7 +26,7 @@
 		></script>
 
 		<script defer src="https://unpkg.com/scrollreveal"></script>
-		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script defer src="https://smtpjs.com/v3/smtp.js"></script>
 		<script defer src="script.js"></script>
 		<title>Alexis Sanchez</title>
 	</head>
@@ -39,7 +39,7 @@
 				<a href="#about">About</a>
 				<a href="#portfolio">Projects</a>
 				<a href="#blog">Blog</a>
-				<!-- <a href="#contact">Contact</a> -->
+				<a href="#contact">Contact</a>
 			</nav>
 
 			<div class="bx bx-moon" id="darkMode-icon"></div>
@@ -294,27 +294,43 @@
 			</div>
 		</section>
 
-		<!-- <section class="contact" id="contact">
+		<section class="contact" id="contact">
 			<h2 class="heading">Contact &nbsp;<span> Me!</span></h2>
 
-			<form method="post">
+			<form method="post" netlify>
 				<div class="input-box">
-					<input type="text" placeholder="Full Name" id="name" />
-					<input type="email" placeholder="Email Address" id="email" />
+					<input type="text" placeholder="Full Name" id="name" name="name" />
+					<input
+						type="email"
+						placeholder="Email Address"
+						id="email"
+						name="email"
+					/>
 				</div>
 				<div class="input-box">
-					<input type="number" placeholder="Mobile Number" id="phone-number" />
-					<input type="text" placeholder="Email Subject" id="subject" />
+					<input
+						type="phone-number"
+						placeholder="Mobile Number"
+						id="phone-number"
+						name="number"
+					/>
+					<input
+						type="text"
+						placeholder="Email Subject"
+						id="subject"
+						name="subject"
+					/>
 				</div>
 				<textarea
 					cols="30"
 					rows="10"
 					placeholder="Your Message"
 					id="message"
+					name="message"
 				></textarea>
 				<input type="submit" value="Send Message" class="btn" id="btn" />
 			</form>
-		</section> -->
+		</section>
 
 		<footer class="footer">
 			<div class="footer-text">

@@ -158,6 +158,10 @@
 	.portfolio .portfolio-container {
 		grid-template-columns: 1fr;
 	}
+
+	.portfolio-layer:nth-child(3) {
+		grid-row: 4;
+	}
 }
 
 @media (max-width: 450px) {
@@ -195,6 +199,10 @@
 @media (max-width: 365px) {
 	.code-img {
 		width: 90vw;
+	}
+
+	.portfolio-layer:nth-child(3) {
+		grid-row: 4;
 	}
 
 	.footer {
