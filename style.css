@@ -223,6 +223,7 @@ span {
 	justify-content: center;
 	align-items: center;
 	gap: 2rem;
+	margin-top: 1rem;
 }
 
 .skills h2 {
@@ -232,10 +233,47 @@ span {
 
 .skill-container {
 	font-size: 6rem;
+	display: flex;
+	gap: 2rem;
 }
 
 .bx {
 	cursor: pointer;
+}
+
+.skill-box {
+	position: relative;
+}
+
+.hoverText {
+	font-size: 1.6rem;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	background-color: var(--main-color);
+	color: #fff;
+	white-space: nowrap;
+	padding: 1rem 1.5rem;
+	border-radius: 7px;
+	opacity: 0;
+	transition: 0.5s ease;
+}
+
+.hoverText::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	transform: translateX(-50%);
+	border: 15px solid;
+	border-color: var(--main-color) #0000 #0000 #0000;
+}
+
+.skill-box:hover .hoverText {
+	top: -60%;
+	visibility: visible;
+	opacity: 1;
 }
 
 /*///////////////////////////////////////////

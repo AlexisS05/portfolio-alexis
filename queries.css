@@ -194,6 +194,20 @@
 	.contact form .input-box input {
 		width: 100%;
 	}
+
+	.skill-container {
+		flex-wrap: wrap;
+	}
+
+	.skill-box:hover .hoverText {
+		top: -50%;
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.blog-container .blog-wrapper {
+		padding: 0;
+	}
 }
 
 @media (max-width: 365px) {
