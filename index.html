@@ -51,7 +51,9 @@
 			<div class="home-content">
 				<h3>Hello, I am</h3>
 				<h1>Alexis Sanchez</h1>
-				<p>A passionate Font-End Developer based in New York City, NY</p>
+				<p>
+					A passionate Font-End Developer/Engineer based in New York City, NY
+				</p>
 
 				<div class="social-media">
 					<!-- <a href="#">
@@ -89,9 +91,10 @@
 				<div class="about-content">
 					<h2 class="heading abt-space">About <span>Me</span></h2>
 					<p>
-						As a Junior Front-End Developer. I possess an impressive arsenal of
-						skills in HTML, CSS, JavaScript, React, SCSS, Java, and Python.
-						Including utilizing other technologies such as Parcel, and NPM.
+						As a Junior Front-End Developer/Engineer. I possess an impressive
+						arsenal of skills in HTML, CSS, JavaScript, React, SCSS, Java, and
+						Python. Including utilizing other technologies such as Parcel, Git,
+						and NPM.
 					</p>
 					<a href="#blog" class="btn">Read More</a>
 				</div>
@@ -320,12 +323,19 @@
 
 			<form method="post" netlify>
 				<div class="input-box">
-					<input type="text" placeholder="Full Name" id="name" name="name" />
+					<input
+						type="text"
+						placeholder="Full Name"
+						id="name"
+						name="name"
+						required
+					/>
 					<input
 						type="email"
 						placeholder="Email Address"
 						id="email"
 						name="email"
+						required
 					/>
 				</div>
 				<div class="input-box">
@@ -334,12 +344,14 @@
 						placeholder="Mobile Number"
 						id="phone-number"
 						name="number"
+						required
 					/>
 					<input
 						type="text"
 						placeholder="Email Subject"
 						id="subject"
 						name="subject"
+						required
 					/>
 				</div>
 				<textarea
@@ -348,6 +360,7 @@
 					placeholder="Your Message"
 					id="message"
 					name="message"
+					required
 				></textarea>
 				<input type="submit" value="Send Message" class="btn" id="btn" />
 			</form>
