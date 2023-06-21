@@ -159,9 +159,18 @@
 		grid-template-columns: 1fr;
 	}
 
-	.portfolio-layer:nth-child(3) {
-		grid-row: 4;
+	.portfolio-layer:nth-child(5) {
+		grid-row: 6;
 	}
+
+	.portfolio-layer:nth-child(1) {
+		grid-row: 2;
+	}
+
+	/* .bx-link-external,
+	.bxl-github {
+		font-size: 4rem;
+	} */
 }
 
 @media (max-width: 450px) {
@@ -174,8 +183,12 @@
 		height: 50vw;
 	}
 
-	.portfolio-layer:nth-child(3) {
-		grid-row: 4;
+	.portfolio-layer:nth-child(5) {
+		grid-row: 6;
+	}
+
+	.portfolio-layer:nth-child(1) {
+		grid-row: 2;
 	}
 
 	#darkMode-icon {

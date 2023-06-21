@@ -92,9 +92,10 @@
 					<h2 class="heading abt-space">About <span>Me</span></h2>
 					<p>
 						As a Junior Front-End Developer/Engineer. I possess an impressive
-						arsenal of skills in HTML, CSS, JavaScript, React, SCSS, Java, and
-						Python. Including utilizing other technologies such as Parcel, Git,
-						and NPM.
+						arsenal of skills in HTML, CSS, JavaScript, TypeScript, React,
+						Redux, SCSS, Java, and Python. Including utilizing other
+						technologies such as Parcel, Git, Jest, Stripe Payments, Firebase,
+						GraphQL and NPM.
 					</p>
 					<a href="#blog" class="btn">Read More</a>
 				</div>
@@ -103,20 +104,40 @@
 				<h2>Tech<span> Stack: </span></h2>
 				<div class="skill-container">
 					<div class="skill-box">
-						<span class="hoverText">HTML</span>
-						<div class="bx bxl-html5"></div>
+						<span class="hoverText">React</span>
+						<div class="bx bxl-react"></div>
 					</div>
 					<div class="skill-box">
-						<span class="hoverText">CSS</span>
-						<div class="bx bxl-css3"></div>
+						<span class="hoverText">TypeScript</span>
+						<div class="bx bxl-typescript"></div>
 					</div>
 					<div class="skill-box">
 						<span class="hoverText">JavaScript</span>
 						<div class="bx bxl-javascript"></div>
 					</div>
 					<div class="skill-box">
-						<span class="hoverText">React</span>
-						<div class="bx bxl-react"></div>
+						<span class="hoverText">Redux</span>
+						<div class="bx bxl-redux"></div>
+					</div>
+					<div class="skill-box">
+						<span class="hoverText">Firebase</span>
+						<div class="bx bxl-firebase"></div>
+					</div>
+					<div class="skill-box">
+						<span class="hoverText">Stripe</span>
+						<div class="bx bxl-stripe"></div>
+					</div>
+					<div class="skill-box">
+						<span class="hoverText">GraphQL</span>
+						<div class="bx bxl-graphql"></div>
+					</div>
+					<div class="skill-box">
+						<span class="hoverText">HTML</span>
+						<div class="bx bxl-html5"></div>
+					</div>
+					<div class="skill-box">
+						<span class="hoverText">CSS</span>
+						<div class="bx bxl-css3"></div>
 					</div>
 					<div class="skill-box">
 						<span class="hoverText">Python</span>
@@ -137,6 +158,39 @@
 		<section class="portfolio" id="portfolio">
 			<h2 class="heading">Latest &nbsp;<span>Project</span></h2>
 			<div class="portfolio-container">
+				<div class="portfolio-layer">
+					<h4>Crwn Clothing</h4>
+					<p>
+						This is a ReactJS-based e-commerce website that incorporates various
+						advanced features. Users can conveniently sign in using email,
+						Google sign-in, or opt for the sign-up option. The platform enables
+						secure and seamless purchasing through a verified checkout page.
+						Notable technologies employed in its development include TypeScript,
+						Redux, Firebase, Stripe, and Jest.
+					</p>
+					<div class="portfolio-tech">
+						<h3>React</h3>
+						<h3>TypeScript</h3>
+						<h3>Redux</h3>
+						<h3>Firebase</h3>
+						<h3>Stripe Payments</h3>
+						<h3>Responsive Web Design</h3>
+						<h3>Jest</h3>
+					</div>
+					<div class="portfolio-links">
+						<a href="https://crwn-clothing-alazy.netlify.app/"
+							><i class="bx-links bx bx-link-external"></i
+						></a>
+						<a href="https://github.com/AlexisS05/crwn-clothing-alazy">
+							<i class="bx-links bx bxl-github"></i>
+						</a>
+					</div>
+				</div>
+				<div class="portfolio-box">
+					<a href="https://crwn-clothing-alazy.netlify.app/">
+						<img src="./img/Project4.JPG" alt="Project 4" class="project-img" />
+					</a>
+				</div>
 				<div class="portfolio-box">
 					<a href="https://poke-dex-search.netlify.app/">
 						<img src="/img/Project1.JPG" alt="Project 1" class="project-img" />
@@ -157,12 +211,14 @@
 						<h3>Object-Orientated Programming</h3>
 						<h3>HTML/CSS/SCSS</h3>
 					</div>
-					<a href="https://poke-dex-search.netlify.app/">
-						<i class="bx bx-link-external"></i
-					></a>
-					<a href="https://github.com/AlexisS05/PokemonSearch">
-						<i class="bx bxl-github"></i>
-					</a>
+					<div class="portfolio-links">
+						<a href="https://poke-dex-search.netlify.app/">
+							<i class="bx-links bx bx-link-external"></i
+						></a>
+						<a href="https://github.com/AlexisS05/PokemonSearch">
+							<i class="bx-links bx bxl-github"></i>
+						</a>
+					</div>
 				</div>
 				<div class="portfolio-layer">
 					<h4>WWE Clone</h4>
@@ -178,12 +234,14 @@
 						<h3>HTML/CSS</h3>
 						<h3>Responsive Web Design</h3>
 					</div>
-					<a href="https://wwe-clone.netlify.app/"
-						><i class="bx bx-link-external"></i
-					></a>
-					<a href="https://github.com/AlexisS05/wwe-clone">
-						<i class="bx bxl-github"></i>
-					</a>
+					<div class="portfolio-links">
+						<a href="https://wwe-clone.netlify.app/"
+							><i class="bx-links bx bx-link-external"></i
+						></a>
+						<a href="https://github.com/AlexisS05/wwe-clone">
+							<i class="bx-links bx bxl-github"></i>
+						</a>
+					</div>
 				</div>
 				<div class="portfolio-box">
 					<a href="https://wwe-clone.netlify.app/">
@@ -213,12 +271,14 @@
 						<h3>HTML/CSS</h3>
 						<h3>Timers & Countdown</h3>
 					</div>
-					<a href="https://genshin-countdown-randomizer.netlify.app/">
-						<i class="bx bx-link-external"></i
-					></a>
-					<a href="https://github.com/AlexisS05/genshin-impact-mini-site">
-						<i class="bx bxl-github"></i>
-					</a>
+					<div class="portfolio-links">
+						<a href="https://genshin-countdown-randomizer.netlify.app/">
+							<i class="bx-links bx bx-link-external"></i
+						></a>
+						<a href="https://github.com/AlexisS05/genshin-impact-mini-site">
+							<i class="bx-links bx bxl-github"></i>
+						</a>
+					</div>
 				</div>
 			</div>
 		</section>
